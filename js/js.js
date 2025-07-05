@@ -18,41 +18,38 @@ document.querySelectorAll("a").forEach(function(link) {
 
             const opcao = this.id;
 
-            especialidades = { 'petitgateau' : 'Petit Gateau',
-                        'sundae': 'Sundae',
-                        'bananasplit': 'Banana Split',
-                        'milkshaketradicional': 'Milk Shake Tradicional',
-                        'milkshakegourmet': 'Milk Shake Gourmet',
-                        'tacasensacao': 'Taça Sensação',
-                        'bolonataca': 'Bolo na Taça',
-                        'brownie' : 'Brownie',
-                        'acai' : 'Açai',
-                        'acresc' : 'Acrescimo'
+            especialidades = { 'petitgateau' : 'um Petit Gateau',
+                        'sundae': 'um Sundae',
+                        'bananasplit': 'uma Banana Split',
+                        'milkshaketradicional': 'um Milk Shake Tradicional',
+                        'milkshakegourmet': 'um Milk Shake Gourmet',
+                        'tacasensacao': 'uma Taça Sensação',
+                        'bolonataca': 'um Bolo na Taça',
+                        'brownie' : 'um Brownie',
+                        'acai' : 'um Açai',
+                        'acresc' : 'um Acrescimo'
                     };
-            lanches = { 'coxinha' : 'Coxinha',
-                        'empada': 'Empada',
-                        'tortinha': 'Tortinha',
-                        'chicagopizza': 'Chicago Pizza',
-                        'pastel': 'Pastel',
-                        'esfirra': 'Esfirra',
-                        'minipizza': 'Mini Pizza'
+            lanches = { 'coxinha' : 'uma Coxinha',
+                        'empada': 'uma Empada',
+                        'tortinha': 'uma Tortinha',
+                        'chicagopizza': 'uma Chicago Pizza',
+                        'pastel': 'um Pastel',
+                        'esfirra': 'uma Esfirra',
+                        'minipizza': 'uma Mini Pizza'
                        
                     };
             
-            bebidas = { 'vitaminaacai' : 'Vitamina de Açai',
-                        'vitaminafruta': 'Vitamina de Fruta',
-                        'suconatural': 'Suco Natural',
-                        'refrilata': 'Refrigerante Lata',
-                        'refrimini': 'Refrigerante Mini',
-                        'agua': 'Água',
+            bebidas = { 'vitaminaacai' : 'uma Vitamina de Açai',
+                        'vitaminafruta': 'uma Vitamina de Fruta',
+                        'suconatural': 'um Suco Natural',
+                        'refrilata': 'um Refrigerante Lata',
+                        'refrimini': 'um Refrigerante Mini',
+                        'agua': 'uma Água',
                        
             
                     };
         
-        
-            console.log("Clicou no id:", this.id);
-            
-   
+         
             
             function sleep(ms) {
                 return new Promise(resolve => setTimeout(resolve, ms));
@@ -101,12 +98,7 @@ document.querySelectorAll("a").forEach(function(link) {
  
             }
             
-            
-            let carregamento = false;
-
-            processarComEspera(progressotamaho,barraprogressotamanho,progresso).then(result => {carregamento = result;} )
-            
-            console.log(carregamento);
+ 
 
             const rndatendente = Math.floor(Math.random() * 2) + 1;
 
@@ -172,7 +164,7 @@ document.querySelectorAll("a").forEach(function(link) {
 
             
 
-            let msgpadrao = 'Olá, gostaria de pedir um ' + opcaoescolhidagl + '.';
+            let msgpadrao = 'Olá, gostaria de pedir ' + opcaoescolhidagl + '.';
             
             if (opcao == 'finalizar-pedido'){
                  window.location.href = atendente + msgpadrao;
