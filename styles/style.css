@@ -321,7 +321,7 @@ ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    text-align: justify;
     
 }
 
@@ -344,6 +344,13 @@ ul{
     font-style: italic;
     margin: 10px;
     
+}
+
+.calltoaction{
+    font-size: 1em;
+    margin-top: 10px;
+     font-weight: bold !important;
+   
 }
 
 .versiculo{
@@ -924,6 +931,7 @@ ul{
 
 .msg-pedido h3{
     font-size: 1em;
+    font-weight: normal;
 }
 
 .msg-pedido{
