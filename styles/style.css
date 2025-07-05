@@ -180,10 +180,10 @@ ul{
 
 .c-menu-icon{
     position: absolute;
-    width: 65px;
+    width: 55px;
     height: auto;
     right:  15px;
-    top: 10px;
+    top: 15px;
 }
 
 
@@ -348,7 +348,7 @@ ul{
 
 .versiculo{
     font-style: italic;
-    font-weight: 0.5em;
+    font-weight: 0.8em;
     text-align: justify;
     width: 300px;
     margin-top: 8px;
