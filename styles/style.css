@@ -349,7 +349,7 @@ ul{
 .calltoaction{
     font-size: 1em;
     margin-top: 10px;
-     font-weight: bold !important;
+    font-weight: bold !important;
    
 }
 
@@ -585,6 +585,15 @@ ul{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+}
+
+
+.menu-op{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; 
 }
 
 .nome-acresc{
