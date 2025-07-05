@@ -1,0 +1,991 @@
+ @font-face {
+        font-family: 'CreamCake';
+        src: url('fonts/Cream Cake.otf');
+}
+
+
+.fade-in-ad {
+    animation: fadeIn 3s forwards;
+  
+}
+
+.fade-in-nl {
+    animation: fadeIn 8s forwards;
+  
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+   
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+     
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1  ; }
+    to { opacity: 0; }
+}
+
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* GERAL */
+body{
+    background-color: #ffa500;
+}
+
+
+.cardapio {
+    background-color: #ffa500;
+}
+
+
+/* CARDAPIO INICIO */
+.c-inicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.c-logo-area{
+    color: gray;
+    background-color: #fff;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.c-wave{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.c-wave svg{
+    position: absolute;
+    left: 0;
+    top: -10px
+}
+
+.h-inicio{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h-titulo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.h-titulo h2{
+   font-family: CreamCake;
+   font-size: 3em;
+}
+.h-subtitulo h3{
+   
+   font-size: 1em;
+   font-style: italic;
+}
+
+.c-menu-categoria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.c-menu-categoria a{
+    text-decoration: none;
+    cursor: default;
+}
+
+ul{
+    
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.c-menu{
+    width: 300px;
+    height: auto;
+
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.c-menu-item{
+    width: 240px;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    background-color: #c97200;
+    color: white;
+    text-align: justify;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.c-menu-item-titulo{
+    font-size: 1.5em;
+}
+
+.c-menu-item-subtitulo{
+    font-size: 0.8em;
+}
+
+
+.c-menu-icon{
+    position: absolute;
+    width: 65px;
+    height: auto;
+    right:  15px;
+    top: 10px;
+}
+
+
+.f-fim{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.f-box{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    height: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.f-img{
+    width: 50px;
+    height: auto;
+    margin-left: 15px;
+  
+}
+
+.f-subtitulo{
+    font-weight: normal;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+.h-especialidades{
+    width: 300px;
+    margin-top: 20px;
+}
+.c-especialidades{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center;
+    background-color: white;
+
+}
+
+.c-salgados{
+    margin-top: -5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center;
+    background-color: white;
+
+}
+
+.c-bebidas{
+    margin-top: -5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center;
+    background-color: white;
+
+}
+
+.c-especialidades .c-wave {
+    top: -250px;
+}
+
+.c-w-transicao{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-bottom: -5px;
+}
+
+.c-w-transicao-2{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    display: block;
+}
+
+.cred{
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    font-style: italic;
+    padding: 10px;
+}
+
+.cred a{
+    text-decoration: underline;
+    color:  white;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.footer-fim{
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    margin-top: -10px;
+     position: relative;
+     overflow: hidden;
+
+}
+
+.footer h3{
+    font-style: italic;
+    margin: 10px;
+    
+}
+
+.versiculo{
+    font-style: italic;
+    font-weight: 0.5em;
+    text-align: justify;
+    width: 300px;
+    margin-top: 8px;
+}
+
+.footer svg{
+    width: 100%;
+   
+}
+
+.aviso-ilustrativo{
+    color:grey;
+    text-align: justify;
+    font-size: 0.8em;
+    margin-top: 10px;
+
+}
+
+.ft-img{
+    width: 100px;
+    height: auto;
+   
+    top: 40px
+}
+
+.h-e-subtitulo h3{
+    font-weight: normal;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.c-menu-foods{
+    width: 350px;
+    height: auto;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-menu-opcao-img{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/petit.webp');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    
+}
+
+.c-menu-opcao-img-sd{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/sundae.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.c-menu-opcao-img-empd{
+     width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/empadas.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.c-menu-opcao-img-vtacai{
+     width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/vitaminaacai.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+
+.c-menu-opcao-img-sc{
+     width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/suconatural.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.c-menu-opcao-img-rflt{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/cocaspritefanta.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.c-menu-opcao-img-ag{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/agua.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.c-menu-opcao-img-rfmn{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/minirefri.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+
+.c-bebidas .nome{
+    width: 45% !important;
+}
+
+.c-bebidas .preco{
+    width: 55% !important;
+}
+
+.c-menu-opcao-img-ch{
+      width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/chicagopizza.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.c-menu-opcao-img-pst{
+        width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/pasteis.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.c-menu-opcao-img-esf{
+        width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/esfirras.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+
+.c-menu-opcao-img-vtfru{
+        width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/vitamina.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.c-menu-opcao-img-mp{
+        width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/minipizza.webp');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.c-menu-opcao-img-to{
+ width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/tortinhafrango.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.c-menu-opcao-cx{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/coxinhas.webp');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    
+}
+
+.c-menu-opcao-img-bn{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/bananasplit.webp');
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    
+}
+
+.acresc{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.nome-acresc{
+    font-weight: 1.2em;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.nome-acresc p{
+    text-align: justify;
+}
+
+.acres-valores{
+    
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    text-align: left;
+}
+
+.titulo-acres {
+    font-size: 1em;
+    font-weight: bold;
+    width: 60%;
+}
+
+.valor-acres{
+    font-size: 1em;
+    font-weight: bold;
+    color: orange;
+    text-align: right;
+    width: 40%;
+    
+}
+
+.c-menu-opcao-img-ms{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/milkshake.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+}
+
+.c-menu-opcao-img-msg{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/milkshake-gourmet.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+}
+
+.c-menu-opcao-img-tcs{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/tacasensacao.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.c-menu-opcao-img-btc{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/bolonataca.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+}
+
+.c-menu-opcao-img-brw{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/brownie.webp');
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    
+}
+
+.c-menu-opcao-img-acai{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    background-image: url('../img/foods/acai.webp');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.c-menu-opcao-info{
+    width: 300px;
+}
+
+.c-menu-opcao{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.c-menu-opcao-titulo{
+    flex-direction: row;
+     
+    display: flex;
+}
+
+.nome{
+    font-size: 1em;
+    font-weight: bold;
+    width: 60%;
+    text-align: left;
+}
+
+ 
+
+ 
+.preco{
+    font-size: 1em;
+    color: orange;
+    font-weight: bold;
+    width: 40%;
+    text-align: right;
+}
+
+.precos{
+    font-size: 1em;
+    color: orange;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    
+    width: 60%;
+    
+}
+
+.precos .preco{
+    font-size: 1em;
+    color: orange;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+}
+
+ 
+
+.c-menu-acai{
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.c-menu-opcao-acres{
+   
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+  
+}
+
+ 
+
+.c-menu-opcao-descricao{
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.btn-wpp{
+    text-decoration: none;
+    color:white;
+    background-color: rgb(13, 194, 13);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 30px;
+    
+}
+
+.btn-wpp a{
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.wpp-icon{
+    width: 40px;
+    height: auto;
+}
+
+
+/* CONFIRMAR PEDIDO */
+
+.confirmar-pedido{
+    display: flex;
+    width: 100%;
+    height: 98vh;
+    background-color: #ffa500;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lanche-especialidade{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.lanche-salgado{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.bebida-f{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.wppimg{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  
+}
+
+.contato p {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.versiculo {
+    margin-bottom: 20px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+.contato a{
+    text-decoration: none;
+    color: black
+}
+
+
+.lanche-salgado .preco{
+    width: 60% !important;
+
+}
+.lanche-salgado .nome{
+    width: 40% !important;
+    
+}
+
+.msg-pedido-acres {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.msg-pedido-acres  h3{
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.msg-pedido h3{
+    font-size: 1em;
+}
+
+.msg-pedido{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.confirmar-pedido .c-logo-area{
+    
+    height: 20%;
+}
+
+.pedido-f{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    
+}
+ 
+
+.msg-pedido-red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: auto;
+    text-align: justify;
+    background-color:  rgb(13, 194, 13);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: default;
+   
+}
+
+.msg-pedido-red h3{
+     font-size: 1em;
+}
+
+.progresso-barra{
+    display: block;
+    width: 100%;
+    height: 2vh;
+    background-color: darkorange;
+}
+
+
+.progresso{
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    display: block;
+    transition: width 0.3s ease;
+}
