@@ -4,6 +4,21 @@ document.querySelectorAll("a").forEach(function(link) {
     link.addEventListener("click", function(event) {
 
         if (this.className == 'c-menu-item' || this.id == 'cred' ) {
+            
+            let outrasacoes = null
+
+            if (this.className == 'c-menu-item') {
+                outrasacoes = 'Menu Inicio'
+            } else if (this.id == 'cred') {
+                outrasacoes = 'Footer crédito'
+
+            }
+
+            gtag('event', 'outras_acoes', {
+                'event_category': 'Outras ações',
+                'event_label': outrasacoes,
+                'value': 1
+            });
 
         } else{
             event.preventDefault();
@@ -67,8 +82,7 @@ document.querySelectorAll("a").forEach(function(link) {
                 
                 try {
                     qtdPorLoop =  (valormaximo - valor)/6;
-                    console.log(qtdPorLoop);
-                    console.log(valormaximo);
+                    
 
                     while(valor <= valormaximo){
                         
@@ -130,7 +144,7 @@ document.querySelectorAll("a").forEach(function(link) {
 
             wpp();
 
-            
+          
 
             if (especialidades.hasOwnProperty(opcao)) {
 
@@ -169,6 +183,12 @@ document.querySelectorAll("a").forEach(function(link) {
             if (opcao == 'finalizar-pedido'){
                  window.location.href = atendente + msgpadrao;
             }
+
+            gtag('event', 'opcao_cardapio', {
+                'event_category': 'Opção Escolhida',
+                'event_label': msgpadrao,
+                'value': 1
+            });
             
 
             
