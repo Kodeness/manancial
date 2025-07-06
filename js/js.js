@@ -8,7 +8,7 @@ document.querySelectorAll("a").forEach(function(link) {
             let outrasacoes = null
 
             if (this.className == 'c-menu-item') {
-                outrasacoes = 'Menu Inicio'
+                outrasacoes = this.id;
             } else if (this.id == 'cred') {
                 outrasacoes = 'Footer crédito'
 
