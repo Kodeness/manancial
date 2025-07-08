@@ -10,11 +10,11 @@ document.querySelectorAll("a").forEach(function(link) {
             if (this.className == 'c-menu-item') {
                 outrasacoes = this.id;
             } else if (this.id == 'cred') {
-                outrasacoes = 'Footer crédito'
+                outrasacoes = this.id;
 
             }
 
-            gtag('event', 'outras_acoes', {
+            gtag('event', outrasacoes, {
                 'event_category': 'Outras ações',
                 'event_label': outrasacoes,
                 'value': 1
@@ -114,17 +114,11 @@ document.querySelectorAll("a").forEach(function(link) {
             
  
 
-            const rndatendente = Math.floor(Math.random() * 2) + 1;
+         
 
             let atendente = 'https://api.whatsapp.com/send?phone=5533988236674&text=';
 
-            if(rndatendente == 1){
-                atendente = 'https://api.whatsapp.com/send?phone=5533988236674&text=';
-            
-            } else {
-                atendente = 'https://api.whatsapp.com/send?phone=5533998238772&text=';
-            };
-            
+
            
             let opcaoescolhida = opcao;
 
@@ -161,12 +155,24 @@ document.querySelectorAll("a").forEach(function(link) {
                     opcaoescolhida = lanches[opcao];
                     opcaoescolhidagl = opcaoescolhida
 
+                     gtag('event', opcaoescolhida, {
+                        'event_category': 'Opção Escolhida',
+                        'event_label': opcaoescolhidagl,
+                        'value': 1
+                    });
+
                     document.getElementById("lanche-salgado").classList.add("fade-in-ad");
                     document.getElementById("lanche-salgado").style.display = "block";
                 } else {
                     if (bebidas.hasOwnProperty(opcao)) {
                         opcaoescolhida = bebidas[opcao];
                         opcaoescolhidagl = opcaoescolhida
+
+                           gtag('event', opcaoescolhida, {
+                                'event_category': 'Opção Escolhida',
+                                'event_label': opcaoescolhidagl,
+                                'value': 1
+                            });
 
                         document.getElementById("bebida-f").classList.add("fade-in-ad");
                         document.getElementById("bebida-f").style.display = "block";
@@ -184,11 +190,7 @@ document.querySelectorAll("a").forEach(function(link) {
                  window.location.href = atendente + msgpadrao;
             }
 
-            gtag('event', 'opcao_cardapio', {
-                'event_category': 'Opção Escolhida',
-                'event_label': msgpadrao,
-                'value': 1
-            });
+           
             
 
             
