@@ -86,7 +86,7 @@ const lanches = {
         whatsapp: 'uma Coxinha',
         imagem: 'img/foods/coxinhas.webp',
         nome: 'Coxinha',
-        descricao: 'Nossa coxinha é preparada com massa leve e crocante, recheada generosamente e temperada ao ponto, trazendo a combinação perfeita de tradição e sabor a cada mordida.',
+        descricao: 'Nossa coxinha é preparada com massa leve e crocante, recheada generosamente e temperada ao ponto.',
         preco: 'R$ 7,00'
     },
     'empada': {
