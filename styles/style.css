@@ -3,6 +3,20 @@
         src: url('fonts/Cream Cake.otf');
 }
 
+@media screen and (min-width: 601px) {
+    .c-wave svg{
+        position: absolute;
+        left: 0;
+        top: -10px; 
+        width: 100%;
+        display: none;
+    }
+    .c-w-transicao{
+        background-color: #ffa500 !important;
+    }
+  
+
+}
 
 .fade-in-ad {
     animation: fadeIn 3s forwards;
@@ -585,6 +599,9 @@ ul{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+
+
+   
 }
 
 
@@ -747,6 +764,33 @@ ul{
     text-align: right;
 }
 
+.nome-pedido-f{
+    font-size: 1em;
+    font-weight: bold;
+    width: 45%;
+    text-align: left;
+}
+
+.preco-pedido-f{
+    font-size: 1em;
+    color: orange;
+    font-weight: bold;
+    width: 55%;
+    text-align: right;
+}
+
+
+ 
+
+ 
+.preco{
+    font-size: 1em;
+    color: orange;
+    font-weight: bold;
+    width: 40%;
+    text-align: right;
+}
+
 .precos{
     font-size: 1em;
     color: orange;
@@ -793,6 +837,12 @@ ul{
  
 
 .c-menu-opcao-descricao{
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.c-menu-opcao-descricao-pedido-f{
     margin-top: 10px;
     font-size: 1em;
     text-align: justify;
@@ -966,7 +1016,26 @@ ul{
     align-items: center;
     height: 80%;
     
+    
+
 }
+
+.pedido-f .lanche-salgado .msg-pedido-red{
+    margin-top: 0px !important;
+}
+
+.c-menu-opcao-img-pedido-f {
+    
+    width: 300px;
+    height: 250px !important;
+    background-color: white;
+  
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+ 
  
 
 .msg-pedido-red{
