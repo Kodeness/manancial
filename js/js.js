@@ -182,15 +182,19 @@ const bebidas = {
 document.querySelectorAll("a").forEach(function(link) {
     link.addEventListener("click", function(event) {
 
-        if (this.className == 'c-menu-item' || this.id == 'cred' ) {
-            
-            let outrasacoes =  this.id;
+        if (this.className == 'c-menu-item' || this.id == 'cred' || this.id== 'logo' ) {
+            if (this.id == 'logo') { 
+                window.location.href = "/"
+            } else{
+                let outrasacoes =  this.id;
  
-            gtag('event', outrasacoes, {
-                'event_category': 'Outras ações',
-                'event_label': outrasacoes,
-                'value': 1
-            });
+                gtag('event', outrasacoes, {
+                    'event_category': 'Outras ações',
+                    'event_label': outrasacoes,
+                    'value': 1
+                });
+            }
+            
 
         } else{
             event.preventDefault();
