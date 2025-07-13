@@ -278,7 +278,16 @@ document.querySelectorAll("a").forEach(function(link) {
 
          
 
+            const rndatendente = Math.floor(Math.random() * 2) + 1;
+
             let atendente = 'https://api.whatsapp.com/send?phone=5533988236674&text=';
+            
+            if(rndatendente == 1){
+                atendente = 'https://api.whatsapp.com/send?phone=5533988236674&text=';
+                        
+            } else {
+                atendente = 'https://api.whatsapp.com/send?phone=5533998238772&text=';
+            };
 
 
            
