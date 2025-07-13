@@ -184,7 +184,7 @@ document.querySelectorAll("a").forEach(function(link) {
 
         if (this.className == 'c-menu-item' || this.id == 'cred' || this.id== 'logo' ) {
             if (this.id == 'logo') { 
-                window.location.href = "/"
+                location.reload();
             } else{
                 let outrasacoes =  this.id;
  
@@ -199,10 +199,11 @@ document.querySelectorAll("a").forEach(function(link) {
         } else{
             event.preventDefault();
 
+            document.getElementById("cardapio").classList.remove("fade-in");
             document.getElementById("cardapio").classList.add("fade-out");
             document.getElementById("cardapio").style.display = "none";
 
-
+            document.getElementById("confirmar-pedido").classList.remove("fade-out");
             document.getElementById("confirmar-pedido").classList.add("fade-in");
             document.getElementById("confirmar-pedido").style.display = "block";
 
@@ -250,6 +251,8 @@ document.querySelectorAll("a").forEach(function(link) {
                         el.style.width = valor + 'px';
 
                         if (valor == valormaximo){
+
+                            el.style.width = '0px';
                             return true;
                         }
 
@@ -278,10 +281,17 @@ document.querySelectorAll("a").forEach(function(link) {
                 carregamento = await processarComEspera(progressotamaho, barraprogressotamanho, progresso);
                 
                 if(carregamento){
-                    
-                    window.location.href = atendente + msgpadrao;
-                            
+                    document.getElementById("confirmar-pedido").classList.remove("fade-in");
+                    document.getElementById("confirmar-pedido").classList.add("fade-out");
+                    document.getElementById("confirmar-pedido").style.display = "none";
 
+                    document.getElementById("cardapio").classList.remove("fade-out");
+                    document.getElementById("cardapio").classList.add("fade-in");
+                    document.getElementById("cardapio").style.display = "block"; 
+
+
+                    window.location.href = atendente + msgpadrao;
+                     
                 };
                    
             };
@@ -296,7 +306,7 @@ document.querySelectorAll("a").forEach(function(link) {
                 opcaoescolhida = especialidades[opcao].whatsapp;
                 opcaoescolhidagl = opcaoescolhida;
 
-                
+                document.getElementById("lanche-salgado").style.display = "none";
                 document.getElementById("lanche-especialidade").classList.add("fade-in-ad");
                 document.getElementById("lanche-especialidade").style.display = "block";
 
@@ -341,6 +351,7 @@ document.querySelectorAll("a").forEach(function(link) {
                         'value': 1
                     });
 
+                    document.getElementById("lanche-especialidade").style.display = "none";
                     document.getElementById("lanche-salgado").classList.add("fade-in-ad");
                     document.getElementById("lanche-salgado").style.display = "block";
 
