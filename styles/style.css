@@ -59,6 +59,7 @@
 /* GERAL */
 body{
     background-color: #ffa500;
+    position: relative;
 }
 
 
@@ -112,6 +113,8 @@ body{
     align-items: center;
     text-align: center;
 }
+
+
 
 .h-titulo {
     flex-direction: column;
@@ -377,6 +380,37 @@ ul{
 
 .footer svg{
     width: 100%;
+   
+}
+
+.redirectok{
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 350px;
+    height: 100px;
+    
+    background-color: rgba(255, 183, 0, 0.59);
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloredirect{
+    font-size: 1em;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.t-redirect{
+    width: 280px;
+}
+
+.closeredirecticon{
+    width: 25px;
+    height: auto;
    
 }
 
