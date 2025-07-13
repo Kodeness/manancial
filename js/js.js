@@ -182,10 +182,20 @@ const bebidas = {
 document.querySelectorAll("a").forEach(function(link) {
     link.addEventListener("click", function(event) {
 
-        if (this.className == 'c-menu-item' || this.id == 'cred' || this.id== 'logo' ) {
-            if (this.id == 'logo') { 
-                location.reload();
+        if (this.className == 'c-menu-item' || this.id == 'cred' || this.id== 'logo' || this.id == 'fecharredirectok' ) {
+            
+            if (this.id == 'logo' || this.id == 'fecharredirectok') { 
+                if (this.id == 'logo'){
+                    location.reload();          
+                } else if (this.id == 'fecharredirectok') {
+                    document.getElementById("redirectok").classList.remove("fade-in");
+                    document.getElementById("redirectok").classList.add("fade-out");
+                    document.getElementById("redirectok").style.display = "none"; 
+                    
+                };
+                
             } else{
+
                 let outrasacoes =  this.id;
  
                 gtag('event', outrasacoes, {
@@ -290,6 +300,11 @@ document.querySelectorAll("a").forEach(function(link) {
                     document.getElementById("cardapio").style.display = "block"; 
 
 
+                    document.getElementById("redirectok").classList.remove("fade-out");
+                    document.getElementById("redirectok").classList.add("fade-in");
+                    document.getElementById("redirectok").style.display = "flex"; 
+
+
                     window.location.href = atendente + msgpadrao;
                      
                 };
@@ -366,9 +381,13 @@ document.querySelectorAll("a").forEach(function(link) {
                
             
                 let msgpadrao = 'Olá vim do cardápio online, gostaria de pedir ' + opcaoescolhidagl + '.';
+                
+
                 if (opcao == 'finalizar-pedido'){
                     window.location.href = atendente + msgpadrao + ' Gostaria de acrescentar também  ' + randomItem.whatsapp + '.';
-                };
+                } else if (opcao == 'finalizar-pedido-acresc'){
+                    window.location.href = atendente + msgpadrao + ' Gostaria de pedir acrescimos também.';
+                }
             
 
             };
