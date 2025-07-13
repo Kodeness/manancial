@@ -146,7 +146,7 @@ const bebidas = {
         imagem: 'img/foods/vitamina.webp',
         nome: 'Vitamina de Fruta',
         descricao: 'Vitaminas de frutas frescas e deliciosas, cheias de sabor, refresca e nutri o seu dia.',
-        preco: '400 ml R$ 15,00'
+        preco: '400 ml R$ 8,00'
     },
     'suconatural': {
         whatsapp: 'um Suco Natural',
