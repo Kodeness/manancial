@@ -374,8 +374,8 @@ ul{
     font-style: italic;
     font-size: 0.8em;
     text-align: justify;
-    width: 300px;
-    margin-top: 8px;
+    width: 350px;
+    margin-top: 20px;
 }
 
 .footer svg{
@@ -384,7 +384,7 @@ ul{
 }
 
 .redirectok{
-    display: flex;
+    display: none;
     position: fixed;
     top: 20px;
     left: 20px;
