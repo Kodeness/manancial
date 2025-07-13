@@ -190,8 +190,7 @@ document.querySelectorAll("a").forEach(function(link) {
                 } else if (this.id == 'fecharredirectok') {
                     document.getElementById("redirectok").classList.remove("fade-in");
                     document.getElementById("redirectok").classList.add("fade-out");
-                    document.getElementById("redirectok").style.display = "none"; 
-                    
+                     
                 };
                 
             } else{
