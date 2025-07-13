@@ -384,7 +384,7 @@ ul{
 }
 
 .redirectok{
-    display: none;
+    display: flex;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -398,8 +398,10 @@ ul{
     align-items: center;
 }
 
+ 
+
 .tituloredirect{
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: normal;
     text-align: justify;
 }
