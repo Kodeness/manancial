@@ -241,14 +241,14 @@ document.querySelectorAll("a").forEach(function(link) {
             async function processarComEspera(valor,valormaximo,el) {
                 
                 try {
-                    qtdPorLoop =  (valormaximo - valor)/6;
+                    qtdPorLoop =  (valormaximo - valor)/5;
                     
 
                     while(valor <= valormaximo){
                         
                         valor = el.offsetWidth;
                         
-                        await sleep(500);
+                        await sleep(1000);
                         
                         valor += qtdPorLoop;
                       
@@ -286,7 +286,7 @@ document.querySelectorAll("a").forEach(function(link) {
                 atendente = 'https://api.whatsapp.com/send?phone=5533988236674&text=';
                         
             } else {
-                atendente = 'https://api.whatsapp.com/send?phone=5533998238772&text=';
+                atendente = 'https://api.whatsapp.com/send?phone=5533999222623&text=';
             };
 
 
@@ -406,3 +406,4 @@ document.querySelectorAll("a").forEach(function(link) {
             
     )});
  
+
