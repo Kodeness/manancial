@@ -286,7 +286,7 @@ document.querySelectorAll("a").forEach(function(link) {
                 atendente = 'https://api.whatsapp.com/send?phone=5533988236674&text=';
                         
             } else {
-                atendente = 'https://api.whatsapp.com/send?phone=5533999222623&text=';
+                atendente = 'https://api.whatsapp.com/send?phone=5533988236674&text=';
             };
 
 
@@ -406,4 +406,5 @@ document.querySelectorAll("a").forEach(function(link) {
             
     )});
  
+
 
