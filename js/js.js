@@ -65,6 +65,13 @@ const especialidades = {
         descricao: 'Intensamente macio, com sabor marcante, uma delícia irresistível que derrete na boca.',
         preco: 'R$ 11,90'
     },
+    'browdim': {
+        whatsapp: 'um Browdim',
+        imagem: 'img/foods/browdim.webp',
+        nome: 'Brownie',
+        descricao: 'A sobremesa perfeita para quem não consegue escolher entre pudim, brownie e sorvete.',
+        preco: 'R$ 18,00'
+    },
     'acai': {
         whatsapp: 'um Açai',
         imagem: 'img/foods/acai.webp',
@@ -406,5 +413,6 @@ document.querySelectorAll("a").forEach(function(link) {
             
     )});
  
+
 
 
