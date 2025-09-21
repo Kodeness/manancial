@@ -13,7 +13,7 @@ const especialidades = {
         imagem: 'img/foods/petit.webp',
         nome: 'Petit Gateau',
         descricao: 'Bolo de chocolate quente e cremoso por dentro, servido com sorvete artesanal. Excelente para qualquer fome ou ocasião.',
-        preco: 'R$ 18,00'
+        preco: 'R$ 19,90'
     },
     'sundae': {
         whatsapp: 'um Sundae',
@@ -49,7 +49,7 @@ const especialidades = {
         imagem: 'img/foods/tacasensacao.webp',
         nome: 'Taça Sensação',
         descricao: 'Camadas generosas de sabor e frescor que se encontram em uma experiência inesquecível — a escolha perfeita para quem quer se deliciar sem moderação.',
-        preco: 'R$ 21,90'
+        preco: 'R$ 23,00'
     },
     'bolonataca': {
         whatsapp: 'um Bolo na Taça',
@@ -63,7 +63,7 @@ const especialidades = {
         imagem: 'img/foods/brownie.webp',
         nome: 'Brownie',
         descricao: 'Intensamente macio, com sabor marcante, uma delícia irresistível que derrete na boca.',
-        preco: 'R$ 11,90'
+        preco: 'R$ 13,90'
     },
     'browdim': {
         whatsapp: 'um Browdim',
@@ -413,6 +413,7 @@ document.querySelectorAll("a").forEach(function(link) {
             
     )});
  
+
 
 
 
