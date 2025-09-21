@@ -56,7 +56,7 @@ const especialidades = {
         imagem: 'img/foods/bolonataca.webp',
         nome: 'Bolo na Taça',
         descricao: 'Perfeito para qualquer hora, uma delícia que une camadas macias e cremosas, tornando seu sabor ainda mais especial.',
-        preco: 'R$ 15,90'
+        preco: 'R$ 17,90'
     },
     'brownie': {
         whatsapp: 'um Brownie',
@@ -413,6 +413,7 @@ document.querySelectorAll("a").forEach(function(link) {
             
     )});
  
+
 
 
 
